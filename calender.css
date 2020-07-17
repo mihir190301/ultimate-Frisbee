@@ -1,0 +1,83 @@
+.calender{
+	z-index: -999;
+	color:#06425C;
+	border: 2px solid black;
+	border-radius: 0px 0px 20px 20px;
+	border-spacing: 0;
+}
+tr:nth-child(odd){
+		background: #F2F2F2;
+}
+tr:nth-child(even) {
+	background: #CDBB79;
+}
+tr:last-child{
+	-webkit-border-radius: 25px 25px 0 0;
+	border-radius: 0 0 25px 25px;	
+}
+tr:last-child>td:first-child{
+	border-radius: 0px 0px 0px 20px;
+}
+tr:last-child>td:last-child{
+	border-radius: 0px 0px 20px 0px;
+}
+caption{
+	border:2px solid black;
+	border-radius: 20px 20px 0px 0px;
+	background: #666666;
+	color: #ffffff;
+	font-size: 150%;
+	text-transform: uppercase;
+	font-weight: bold;
+
+}
+.calender th,.calender td{
+	margin: -2px;
+	padding-bottom: 2px;
+}
+th{
+	text-align: center;
+	font-weight: bold;
+	background: #ffffff;
+}
+td{
+	vertical-align: top;
+	width: 70px;
+	height: 70px;
+
+}
+.holiday{
+	margin:0;
+	padding:0;
+	background-color: #51A39D;
+}
+
+/*Use a background image*/
+.old{
+	padding:0;
+	margin: 0;
+	background-color: #51A39D;
+	color:rgba(0,0,0,.25);
+  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/holiday.png") no-repeat;
+  border-spacing: 0;
+
+  /*This is the code used in the example*/
+/*	background: url("../imgs/holiday.png") no-repeat;
+*/	
+}
+span{
+	visibility: hidden;
+	display: block;
+	color: #800000;
+	text-align: center;
+}
+td:active>span{
+	visibility: visible;
+}
+table{
+	transition-property: color,transform;
+	transform:translate(50px,10px);
+}
+h2{
+     text-decoration: underline;
+ }
